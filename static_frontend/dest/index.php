@@ -1,3 +1,3 @@
 <?php
-echo 'This is index';
+echo 'This is index page';
 ?>
