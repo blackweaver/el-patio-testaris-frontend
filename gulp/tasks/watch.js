@@ -13,6 +13,6 @@ gulp.task('watch', ['watchify', 'browserSync', 'scripts', 'concatJs'], function(
   gulp.watch(config.images.src, ['images']);
   gulp.watch(config.scripts.src + '/**', ['scripts']);
   gulp.watch(config.sass.src, ['sass']);
-  // gulp.watch(config.php.src, ['php']);
+  gulp.watch(config.php.src, ['php']);
   // gulp.watch([config.production.jsDest  + '/**', '!' + config.production.jsDest  + '/scripts.js'], ['concatJs']);
 });
