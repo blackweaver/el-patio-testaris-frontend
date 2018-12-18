@@ -9,9 +9,10 @@ module.exports = {
   dest: dest,
   src: src,
   browserSync: {
+    host: '192.168.1.1',
     host: 'localhost',
-    // proxy: 'http://local.testaris.ch',
-    open: 'external',
+    proxy: 'http://localhost',
+    // open: 'external',
     startPath: '/',
     notify: true,
     notify: {
