@@ -89,18 +89,10 @@ Thumbs.db
 
 # W3 Total Cache untracked files #
 build/.htaccess
-build/.htaccess.*
-build/wp-content/advanced-cache.php
-build/wp-content/db.php
-build/wp-content/object-cache.php
-build/wp-content/w3tc-config/
 
 # Sublime Text project files
 *.sublime-project
 *.sublime-workspace
+*.code-workspace
 
 build/error_log
-
-# Webhook by MIG
-reduts_webhook.log
-reduts.code-workspace
