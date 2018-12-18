@@ -1,0 +1,106 @@
+# Wordpress
+build/wp-content/uploads/*
+build/wp-content/upgrade/*
+build/wp-content/cache/*
+build/wp-content/cache/config/*
+build/wp-config-local.php
+build/wp-admin/error_log
+build/wp-admin/error_log.*
+build/wp-content/uploads/
+build/wp-content/blogs.dir/
+build/wp-content/upgrade/*
+build/wp-content/backup-db/*
+build/wp-content/advanced-cache.php
+build/wp-content/wp-cache-config.php
+build/wp-content/cache/*
+build/wp-content/cache/supercache/*
+
+# Google Search Console verification
+build/goog*.*
+
+# Backups
+backups/files/
+backups/db/*_local_db.sql
+backups/db/*_remote_db.sql
+
+# Project config details
+commands/local_config.sh
+
+# WP-CLI
+wp-cli.private.yml
+
+# Node & Gulp
+src/**/.sass-cache/
+node_modules/
+
+# General
+build/.project
+build/cgi-bin/
+build/.settings/*
+build/.settings
+build/logs/
+!.gitkeep
+build/robots.txt
+
+*~
+.DS_Store
+*.pyc
+.svn
+.cvs
+*.bak
+*.swp
+*.sem
+Thumbs.db
+
+# large/disallowed file types
+# a CDN should be used for these
+*.hqx
+*.bin
+*.exe
+*.dll
+*.deb
+*.dmg
+*.iso
+*.img
+*.msi
+*.msp
+*.msm
+*.mid
+*.midi
+*.kar
+*.mp3
+*.ogg
+*.m4a
+*.ra
+*.3gpp
+*.3gp
+*.mp4
+*.mpeg
+*.mpg
+*.mov
+*.webm
+*.flv
+*.m4v
+*.mng
+*.asx
+*.asf
+*.wmv
+*.avi
+
+# W3 Total Cache untracked files #
+build/.htaccess
+build/.htaccess.*
+build/wp-content/advanced-cache.php
+build/wp-content/db.php
+build/wp-content/object-cache.php
+build/wp-content/w3tc-config/
+
+# Sublime Text project files
+*.sublime-project
+*.sublime-workspace
+
+build/error_log
+
+# Webhook by MIG
+reduts_webhook.log
+reduts.code-workspace
