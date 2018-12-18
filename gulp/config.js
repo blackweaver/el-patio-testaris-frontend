@@ -1,5 +1,5 @@
-var build = './dest';
-var dest = build;
+var build = './build';
+var dest = build + '/wp-content/themes/testaris';
 var src = './src';
 var fs = require('fs');
 var bstyles = require('bstyles');
@@ -9,10 +9,9 @@ module.exports = {
   dest: dest,
   src: src,
   browserSync: {
-    host: '192.168.1.1',
-    host: 'localhost',
-    proxy: 'http://localhost',
-    // open: 'external',
+    host: 'local.testaris.ch',
+    proxy: 'http://local.testaris.ch',
+    open: 'external',
     startPath: '/',
     notify: true,
     notify: {
