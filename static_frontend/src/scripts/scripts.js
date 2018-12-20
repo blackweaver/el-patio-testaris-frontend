@@ -1,1 +1,1 @@
-var includedSample = require('./_included-sample');
+var includedSample = require('./_interactions');
