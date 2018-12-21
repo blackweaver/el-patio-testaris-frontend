@@ -1,1 +1,1 @@
-var includedSample = require('./_interactions');
+let interactions = require('./_interactions');

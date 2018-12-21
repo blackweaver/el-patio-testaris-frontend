@@ -4,7 +4,7 @@
 	let responsive = false;
 
 	const btn_ham = document.querySelector("#ham");
-	const menu = document.querySelector(".menu");
+	const menu = document.querySelector("nav");
 	btn_ham.addEventListener('click', switchMenu);
 
 	function switchMenu(e){
