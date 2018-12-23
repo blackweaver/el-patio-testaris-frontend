@@ -10,85 +10,50 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <img src="images/logo.svg" alt="">
-        <a href="#" id="ham"></a>
-        <nav>
-            <ul class="lang">
-                <li>
-                    <a href="#">DE</a>
-                </li>
-                <li>
-                    <a href="#">FR</a>
-                </li>
-                <li>
-                    <a href="#">EN</a>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <a href="#">Über uns</a>
-                </li>
-                <li>
-                    <a href="#">Dienstleistungen</a>
-                </li>
-                <li>
-                    <a href="#">Team</a>
-                </li>
-                <li>
-                    <a href="#">Advisory Board</a>
-                </li>
-                <li>
-                    <a href="#">Kontakt</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <section>
-        <div class="slider" data-sizes="50vw" style="width: 100% !important">
+    <?php include('_inc-header.php') ?>
+    <?php include('_inc-slider.php') ?>
+    <section class="text-box">
+        <div>
+            <div><p>über uns</p></div>
             <div>
-                <h3>Revision ・ Sreuern ・ Treuhand</h3>
-                <p>«Limporep ernate nonsequo de professionell sandit venac dant etur magni eumquo corit.»</p>
+                <p>Tusdant vel ma quibusaped moluptas autatur autempora consendaera nam rerempos quam aut lit occumque estrumquam dolutem si am reheniet dolest que conseque pratur re plabore stiuscipis endignatur aut quia quatur,  que lame volorpori occulpa quiatumquam, simusam sedit voluptaera inctasi tatusam ani corum nullab iusaperum inus a volupta venet lique nectur aut dolor se susame occusanda. </p>
+                <p>Aquis magnihi litasinum quiatquis dolorio nsequam fuga.  Lore nis repudam, nem el et estinima sequodi tatque sequo volorehent voluptas inihillorum si que expla con quatuscium, nissin nimusandae intion nisciat accust vellum.</p>
             </div>
-            <div>
-                <h3>Revision ・ Sreuern ・ Treuhand</h3>
-                <p>«Limporep ernate nonsequo de professionell sandit venac dant etur magni eumquo corit.»</p>
-            </div>
-            <div>
-                <h3>Revision ・ Sreuern ・ Treuhand</h3>
-                <p>«Limporep ernate nonsequo de professionell sandit venac dant etur magni eumquo corit.»</p>
-            </div>
+            <div><a class="top" href="javascript:;"><img src="images/arrow-top.svg" alt=""></a></div>
+            <div class="fix-float"></div>
         </div>
     </section>
-    <footer>
-        <address>
-            <p>Testaris AG • Malzgasse 18 • CH-4052 Basel • +41 61 201 20 70 • info@testaris.ch</p> 
-            <p>Impressum<br>Datenschutz</p> 
-        </address>
-        <img src="images/logo-expert.svg" alt="EXPERT SUISSE">
-        <div class="fix-float"></div>
-    </footer>
+    <section class="text-box">
+        <div>
+            <div><p>über uns</p></div>
+            <div>
+                <div class="box">
+                    <img src="images/icon-magnifying.png" alt="">
+                    <h4>Revision</h4>
+                    <p>Ada vel ma quibuda de aped moluptas autatur autempo.</p> 
+                    <a href="javascript:;">> mehr erfahren</a> 
+                </div>
+                <div class="box">
+                    <img src="images/icon-calculator.png" alt="">
+                    <h4>Steuern</h4>
+                    <p>Ada vel ma quibuda de aped moluptas autatur autempo.</p> 
+                    <a href="javascript:;">> mehr erfahren</a> 
+                </div>
+                <div class="box">
+                    <img src="images/icon-hands.png" alt="">
+                    <h4>Treuhand</h4>
+                    <p>Ada vel ma quibuda de aped moluptas autatur autempo.</p> 
+                    <a href="javascript:;">> mehr erfahren</a> 
+                </div>
+            </div>
+            <div><a class="top" href="javascript:;"><img src="images/arrow-top.svg" alt=""></a></div>
+            <div class="fix-float"></div>
+        </div>
+    </section>
+    <?php include('_inc-footer.php') ?>
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
     <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
-    <script type="text/javascript">
-        $(document).on('ready', function() {
-            $(".slider").slick({
-                lazyLoad: 'ondemand', // ondemand progressive anticipated
-                infinite: true,
-                // responsive: [
-                //     {
-                //         settings: "unslick"
-                //         breakpoint: 920,
-                //         settings: {
-                //             slidesToShow: 1,
-                //             slidesToScroll: 1,
-                //             infinite: true
-                //         }
-                //     }
-                // ]
-            });
-        });
-    </script>
+    <script type="text/javascript"> let jquery = $ </script> 
     <script src="js/scripts.js"></script>
 				
 </body>

@@ -140,6 +140,38 @@
             }
         }
         section {
+
+            &.text-box {
+                color: $color_main;
+                
+                > div {
+    
+                    > div:nth-child(1) {
+                        width: 90%;
+                        margin: 0 auto;
+                        float: none;
+                        
+                    }
+                    > div:nth-child(2) {
+                        width: 90%;
+                        margin: 0 auto;
+                        float: none;
+
+                        .box {
+                            float: none;
+                            width: 90%;
+                            text-align: center;
+                            margin: 0 auto;
+                        }
+                    }
+                    > div:nth-child(3) {
+                        width: 100%;
+                        float: none;
+                        margin-top: 0px;
+                    }
+                }
+
+            }
     
             .slick-prev:before,
             .slick-next:before {
