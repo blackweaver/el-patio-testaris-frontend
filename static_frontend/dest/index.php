@@ -45,7 +45,7 @@
         </nav>
     </header>
     <section>
-        <div class="slider" data-sizes="50vw">
+        <div class="slider" data-sizes="50vw" style="width: 100% !important">
             <div>
                 <h3>Revision ・ Sreuern ・ Treuhand</h3>
                 <p>«Limporep ernate nonsequo de professionell sandit venac dant etur magni eumquo corit.»</p>
@@ -60,13 +60,32 @@
             </div>
         </div>
     </section>
+    <footer>
+        <address>
+            <p>Testaris AG • Malzgasse 18 • CH-4052 Basel • +41 61 201 20 70 • info@testaris.ch</p> 
+            <p>Impressum<br>Datenschutz</p> 
+        </address>
+        <img src="images/logo-expert.svg" alt="EXPERT SUISSE">
+        <div class="fix-float"></div>
+    </footer>
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
     <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript">
         $(document).on('ready', function() {
             $(".slider").slick({
                 lazyLoad: 'ondemand', // ondemand progressive anticipated
-                infinite: true
+                infinite: true,
+                // responsive: [
+                //     {
+                //         settings: "unslick"
+                //         breakpoint: 920,
+                //         settings: {
+                //             slidesToShow: 1,
+                //             slidesToScroll: 1,
+                //             infinite: true
+                //         }
+                //     }
+                // ]
             });
         });
     </script>

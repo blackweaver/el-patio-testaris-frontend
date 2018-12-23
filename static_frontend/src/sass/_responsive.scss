@@ -1,0 +1,183 @@
+/* Responsive */
+
+@media (max-width: $screen-medium) {
+    body {
+        font-size: .8em;
+        
+        header { 
+    
+            img:nth-child(0) {
+                width: 50%;
+            }
+    
+            nav {
+                width: 100%;
+                display: block;
+                float: none;
+    
+                ul {
+                    float: none;
+                    width: 100%;
+                    text-align: center;
+
+                    li {
+                        a {
+                            text-align: center;
+                        }
+                    }
+                
+                    &.lang {
+                        width: 100%;
+                        background: darken($color_main, 5%);
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+@media (max-width: $screen-small) {
+
+    @keyframes openmenu {
+        0%   { left: -250px; }
+        100% { left: 0px; }
+    }
+    
+    @keyframes closemenu {
+        0%   { left: 0px; }
+        100% { left: -250px; }
+    }
+
+    body {
+        font-size: .9em;
+        header { 
+            background: $color_main;
+            text-align: left;
+            height: 80px;
+
+            img:nth-child(1) {
+                width: 200px;
+            }
+
+            #ham {
+                display: block;
+            }
+
+            nav {
+                width: 250px;
+                position: absolute;
+                background: $color_main;
+                text-align: left;
+                top: 80px;
+                left: -250px;
+                height: 100%;
+                z-index: 2000;
+
+                &.open {
+                    -webkit-animation-name: openmenu; /* Chrome, Safari, Opera */
+                    -webkit-animation-duration: .5s; /* Chrome, Safari, Opera */
+                    -webkit-animation-delay: 0s; /* Chrome, Safari, Opera */
+                    animation-name: openmenu;
+                    animation-duration: .5s;
+                    animation-delay: 0s;
+                    left: 0px;
+                }
+                                    
+                &.close {
+                    -webkit-animation-name: closemenu; /* Chrome, Safari, Opera */
+                    -webkit-animation-duration: .5s; /* Chrome, Safari, Opera */
+                    -webkit-animation-delay: 0s; /* Chrome, Safari, Opera */
+                    animation-name: closemenu;
+                    animation-duration: .5s;
+                    animation-delay: 0s;
+                    left: -250px;
+                }
+
+                ul {
+                    float: none;
+                    text-align: left;
+                    width: 100%;
+                    height: auto;
+                    line-height: normal;
+
+                    li {
+                        display: list-item;
+                        border-bottom: darken($color_main, 10%) solid 1px;
+                        padding: 0;
+
+                        a {
+                            display: block;
+                            width: 90%;
+                            padding: 10px 5%;
+                            text-align: left;
+
+                            &:hover {
+                                background: $color_beige;
+                                color: $color_main;
+                            }
+                        }
+                    }
+                
+                    &.lang {
+                        text-align: center;
+                        width: 100%;
+                        background: $color_beige;
+                        padding: 10px 0;
+
+                        li {
+                            display: inline;
+                            border-bottom: none;
+                            
+
+                            a {
+                                display: inline;
+                                color: $color_main;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        section {
+    
+            .slick-prev:before,
+            .slick-next:before {
+                font-size: 30px;
+            }
+
+            .slick-slide div {
+
+                height: 150px;
+    
+                h3 {
+                    font-size: .7em;
+                    padding: 10px 0;
+                }
+    
+                p {
+                    font-size: 1.3em;
+                    line-height: 1.3em;
+                }
+            }
+
+            .slick-prev {
+                left: 0;
+            }
+    
+            .slick-next {
+                right: 0;
+            }
+        }
+        footer {
+            text-align: center;
+            address {
+                float: none;
+            }
+            img {
+                float: none;
+                width: 30%;
+            }
+        }
+    }
+}

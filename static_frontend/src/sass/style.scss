@@ -1,14 +1,18 @@
 @charset "UTF-8";
-@import "reset";
-
-/* Colores */
-$color_main: #002856;
-$color_beige: #F0EEEB;
+@import "_reset";
+@import "_vars";
 
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
     line-height: 1.3em;
+    color: white;
+
+    .fix-float {
+        clear: both;
+        height: 0;
+        overflow: hidden;
+    }
 
     a {
         color: white;
@@ -18,8 +22,11 @@ body {
         }
     }
     header { 
-        padding: 20px;
         background: $color_main;
+
+        img:nth-child(1) {
+            margin: 20px;
+        }
 
         #ham {
             position: absolute;
@@ -41,10 +48,14 @@ body {
                 float: right;
                 text-align: right;
                 width: 70%;
+                display: block;
+                height: 40px;
+                line-height: 40px;
 
                 li {
                     display: inline;
                     padding: 0 10px;
+                    text-align: center;
                 }
             
                 &.lang {
@@ -106,137 +117,20 @@ body {
         }
 
     }
-}
+    footer {
+        background: $color_main;
+        address {
+            float: left;
 
-/* Responsive */
-
-@media (max-width: 720px) {
-
-    @keyframes openmenu {
-        0%   { left: -250px; }
-        100% { left: 0px; }
-    }
-    
-    @keyframes closemenu {
-        0%   { left: 0px; }
-        100% { left: -250px; }
-    }
-
-    body {
-        header { 
-            padding: 20px;
-            background: $color_main;
-            text-align: left;
-            height: 40px;
-
-            img:nth-child(1) {
-                width: 50%;
-            }
-
-            #ham {
-                display: block;
-            }
-
-            nav {
-                width: 250px;
-                position: absolute;
-                background: $color_main;
-                top: 80px;
-                left: -250px;
-                height: 100%;
-                z-index: 2000;
-
-                &.open {
-                    -webkit-animation-name: openmenu; /* Chrome, Safari, Opera */
-                    -webkit-animation-duration: .5s; /* Chrome, Safari, Opera */
-                    -webkit-animation-delay: 0s; /* Chrome, Safari, Opera */
-                    animation-name: openmenu;
-                    animation-duration: .5s;
-                    animation-delay: 0s;
-                    left: 0px;
-                }
-                                    
-                &.close {
-                    -webkit-animation-name: closemenu; /* Chrome, Safari, Opera */
-                    -webkit-animation-duration: .5s; /* Chrome, Safari, Opera */
-                    -webkit-animation-delay: 0s; /* Chrome, Safari, Opera */
-                    animation-name: closemenu;
-                    animation-duration: .5s;
-                    animation-delay: 0s;
-                    left: -250px;
-                }
-
-                ul {
-                    float: none;
-                    text-align: left;
-                    width: 100%;
-
-                    li {
-                        display: list-item;
-                        border-bottom: darken($color_main, 10%) solid 1px;
-                        padding: 0;
-
-                        a {
-                            display: block;
-                            width: 90%;
-                            padding: 10px 5%;
-
-                            &:hover {
-                                background: $color_beige;
-                                color: $color_main;
-                            }
-                        }
-                    }
-                
-                    &.lang {
-                        text-align: center;
-                        width: 100%;
-                        background: $color_beige;
-                        padding: 10px 0;
-
-                        li {
-                            display: inline;
-                            border-bottom: none;
-                            
-
-                            a {
-                                display: inline;
-                                color: $color_main;
-                            }
-                        }
-                    }
-                }
+            p {
+                padding: 20px;
+                padding-bottom: 0;
             }
         }
-        section {
-    
-            .slick-prev:before,
-            .slick-next:before {
-                font-size: 30px;
-            }
-
-            .slick-slide div {
-
-                height: 150px;
-    
-                h3 {
-                    font-size: .7em;
-                    padding: 10px 0;
-                }
-    
-                p {
-                    font-size: 1.3em;
-                    line-height: 1.3em;
-                }
-            }
-
-            .slick-prev {
-                left: 0;
-            }
-    
-            .slick-next {
-                right: 0;
-            }
+        img {
+            float: right;
+            margin: 20px;
         }
     }
 }
+@import "_responsive";
