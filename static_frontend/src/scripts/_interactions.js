@@ -30,12 +30,18 @@
 			menu.classList.remove("open");
 			mobile = false;
 		}
+		if(jquery("body").position().top > 0) {
+			menu.style.top = 0;	
+		}else{
+			menu.style.top = '80px';
+		}
 		e.preventDefault();
 	}
 
 	function goTop(e) {
 		let top = jquery("body").offset().top;
-    	jquery('html,body').animate({ scrollTop: top }, 'swing');
+		jquery('html,body').animate({ scrollTop: top }, 'swing');
+		e.preventDefault();
 	}
 
 	/* Slider */

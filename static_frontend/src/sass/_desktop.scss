@@ -25,7 +25,7 @@ body {
         }
 
         #ham {
-            position: absolute;
+            position: fixed;
             top: 0;
             right: 0;
             margin-left: 250px;
@@ -102,17 +102,112 @@ body {
                             font-size: 1.2em;
                         }
 
+                        a {
+                            color: $color_main;
+                        }
+                    }
+
+                    .box-team {
+                        float: left;
+                        width: (100 / 3) * 1%;
+                        text-align: left;
+                        font-size: .5em;
+                        line-height: 1.3em;
+                        height: 540px;
+                        overflow: hidden;
+
+                        img {
+                            width: 80%;
+                            margin-bottom: 10px;
+                        }
+
+                        h4 {
+                            font-size: 1.2em;
+                            text-align: left;
+                            padding-bottom: 10px;
+                            width: 80%;
+                        }
+
+                        dl {
+                            text-align: left;
+                            width: 80%;
+                            border-bottom: 1px $color_main dotted;
+                            margin-bottom: 10px;
+                            padding-bottom: 10px;
+
+                            dt {
+                                font-weight: bold;
+                                padding-bottom: 5px;
+                            }
+
+                            dd {
+                                display: list-item;
+                                list-style-type: disc;
+                                margin-left: 25px;
+                            }
+                        }
+
                         p {
+                            text-align: left;
+                            width: 80%;
+                            margin-bottom: 10px;
                         }
 
                         a {
                             color: $color_main;
+                            font-weight: bold;
+                            font-size: .9em;
+
+                            &:hover {
+                                text-decoration: underline;
+                            }
                         }
                     }
                 }
                 > div:nth-child(3) {
                     width: 10%;
                     float: left;
+                    text-align: center;
+                    margin-top: 380px;
+                    color: $color_main;
+
+                    a {
+                        display: block;
+                    }
+                }
+
+                /* Map */
+
+                > div.map:nth-child(2) {
+                    width: 20%;
+                    float: left;
+                    font-size: 1.1em;
+                    line-height: 1.3em;
+                    padding-bottom: 20px;
+
+                    a {
+                        color: $color_main;
+                        font-weight: bold;
+                        font-size: .9em;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                > div.map:nth-child(3) {
+                    width: 45%;
+                    float: left;
+                    text-align: left;
+                    margin-top: 0px;
+
+                    a {
+                        display: inline;
+                    }
+                }
+                > div.map:nth-child(4) {
+                    width: 10%;
+                    float: right;
                     text-align: center;
                     margin-top: 380px;
                     color: $color_main;

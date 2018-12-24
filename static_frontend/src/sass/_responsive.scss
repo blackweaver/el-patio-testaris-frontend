@@ -33,6 +33,20 @@
                 }
             }
         }
+
+        section {
+            &.text-box {
+            
+                > div {
+                    max-width: 95%;
+                    > div:nth-child(2) {
+                        .box-team {
+                            height: 450px;
+                        }
+                    }
+                }
+            }
+        }
     }
     
 }
@@ -66,7 +80,7 @@
 
             nav {
                 width: 250px;
-                position: absolute;
+                position: fixed;
                 background: $color_main;
                 text-align: left;
                 top: 80px;
@@ -163,8 +177,44 @@
                             text-align: center;
                             margin: 0 auto;
                         }
+
+                        .box-team {
+                            float: none;
+                            width: 100%;
+                            width: 90%;
+                            margin: 0 auto 10px auto;
+                            font-size: .7em;
+                            height: auto;
+
+                            img, h4, p {
+                                width: 100%;
+                            }
+                        }
                     }
                     > div:nth-child(3) {
+                        width: 100%;
+                        float: none;
+                        margin-top: 0px;
+                    }
+
+                    /* Map */
+
+                    > div.map:nth-child(2) {
+                        width: 90%;
+                        text-align: center;
+                        margin: 0 auto;
+                    }
+                    > div.map:nth-child(3) {
+                        width: 100%;
+                        float: none;
+                        text-align: center;
+                        margin: 0;
+
+                        p {
+                            padding-bottom: 10px;
+                        }
+                    }
+                    > div.map:nth-child(4) {
                         width: 100%;
                         float: none;
                         margin-top: 0px;
