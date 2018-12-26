@@ -261,7 +261,7 @@
             </div>
             <div class="map">
                 <p>Lageplan:</p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2692.749831684852!2d7.595061551328152!3d47.55319749955631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4791b9b4976bfc35%3A0xf8a9df41e96d5f!2sMalzgasse+18%2C+4052+Basel%2C+Suiza!5e0!3m2!1ses!2suy!4v1545658514452" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2692.749831684852!2d7.595061551328152!3d47.55319749955631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4791b9b4976bfc35%3A0xf8a9df41e96d5f!2sMalzgasse+18%2C+4052+Basel%2C+Suiza!5e0!3m2!1ses!2suy!4v1545658514452" width="300" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
             <div class="map"><a class="top" href="#"><img src="images/arrow-top.svg" alt=""></a></div>
             <div class="fix-float"></div>
