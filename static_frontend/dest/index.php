@@ -1,18 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Testaris</title>
-    <link rel="stylesheet" type="text/css" href="./slick/slick.css">
-    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
-    <link rel="stylesheet" href="style.css">
-</head>
+<?php include('_inc-head.php') ?>
 <body>
     <?php include('_inc-header.php') ?>
     <?php include('_inc-slider.php') ?>
-    <section class="text-box">
+    <section class="text-box" id="uberuns">
         <div>
             <div><p>über uns</p></div>
             <div>
@@ -23,9 +13,9 @@
             <div class="fix-float"></div>
         </div>
     </section>
-    <section class="text-box">
+    <section class="text-box" id="dienstleistungen">
         <div>
-            <div><p>über uns</p></div>
+            <div><p>Dienstleistungen</p></div>
             <div>
                 <div class="box">
                     <img src="images/icon-magnifying.png" alt="">
@@ -46,11 +36,11 @@
                     <a href="javascript:;">> mehr erfahren</a> 
                 </div>
             </div>
-            <div><a class="top" href="#"><img src="images/arrow-top.svg" alt=""></a></div>
+            <div><a class="top" href="#top"><img src="images/arrow-top.svg" alt=""></a></div>
             <div class="fix-float"></div>
         </div>
     </section>
-    <section class="text-box">
+    <section class="text-box" id="team">
         <div>
             <div><p>Team</p></div>
             <div>
@@ -185,7 +175,7 @@
             <div class="fix-float"></div>
         </div>
     </section>
-    <section class="text-box">
+    <section class="text-box" id="advisory-board">
         <div>
             <div><p>Advisory Board</p></div>
             <div>
@@ -257,7 +247,7 @@
             <div class="fix-float"></div>
         </div>
     </section>
-    <section class="text-box">
+    <section class="text-box" id="kontakt">
         <div>
             <div><p>Kontakt</p></div>
             <div class="map">
@@ -278,10 +268,6 @@
         </div>
     </section>
     <?php include('_inc-footer.php') ?>
-    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
-    <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
-    <script type="text/javascript"> let jquery = $ </script> 
-    <script src="js/scripts.js"></script>
-				
+    <?php include('_inc-js.php') ?>			
 </body>
 </html>

@@ -15,19 +15,19 @@
             </ul>
             <ul>
                 <li>
-                    <a href="#">Über uns</a>
+                    <a href="#uberuns">Über uns</a>
                 </li>
                 <li>
-                    <a href="#">Dienstleistungen</a>
+                    <a href="#dienstleistungen">Dienstleistungen</a>
                 </li>
                 <li>
-                    <a href="#">Team</a>
+                    <a href="#team">Team</a>
                 </li>
                 <li>
-                    <a href="#">Advisory Board</a>
+                    <a href="#advisory-board">Advisory Board</a>
                 </li>
                 <li>
-                    <a href="#">Kontakt</a>
+                    <a href="#kontakt">Kontakt</a>
                 </li>
             </ul>
         </nav>
