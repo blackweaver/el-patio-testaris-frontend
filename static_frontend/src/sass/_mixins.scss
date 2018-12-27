@@ -40,3 +40,7 @@
     animation-duration: .5s;
     animation-delay: 0s;
 }
+
+@function get-size($r,$px) {
+    @return ($px / $r) * 1rem;
+}

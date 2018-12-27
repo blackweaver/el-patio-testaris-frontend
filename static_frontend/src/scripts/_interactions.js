@@ -86,11 +86,14 @@ $(document).ready(function() {
 	}
 
 	function go(e) {
+		console.log("hola");
 		try {
 			let anchor = e.target.href.split('#');
 			anchor = "#" + anchor[1];
 			if(document.querySelector(anchor)) {
-				$('html,body').animate({ scrollTop: $(anchor).offset().top }, 'swing');
+				let total = $(anchor).offset().top - 50;
+				$('html,body').animate({ scrollTop: total }, 'swing');
+				console.log($(anchor).offset().top);
 			} else {
 				window.open("index.php" + anchor, "_self");
 			}

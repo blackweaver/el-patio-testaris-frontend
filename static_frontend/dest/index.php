@@ -4,7 +4,7 @@
     <?php include('_inc-slider.php') ?>
     <section class="text-box" id="uberuns">
         <div>
-            <div><p>über uns</p></div>
+            <div><h2>über uns</h2></div>
             <div>
                 <p>Tusdant vel ma quibusaped moluptas autatur autempora consendaera nam rerempos quam aut lit occumque estrumquam dolutem si am reheniet dolest que conseque pratur re plabore stiuscipis endignatur aut quia quatur,  que lame volorpori occulpa quiatumquam, simusam sedit voluptaera inctasi tatusam ani corum nullab iusaperum inus a volupta venet lique nectur aut dolor se susame occusanda. </p>
                 <p>Aquis magnihi litasinum quiatquis dolorio nsequam fuga.  Lore nis repudam, nem el et estinima sequodi tatque sequo volorehent voluptas inihillorum si que expla con quatuscium, nissin nimusandae intion nisciat accust vellum.</p>
@@ -15,7 +15,7 @@
     </section>
     <section class="text-box" id="dienstleistungen">
         <div>
-            <div><p>Dienstleistungen</p></div>
+            <div><h2>Dienstleistungen</h2></div>
             <div>
                 <div class="box">
                     <img src="images/icon-magnifying.png" alt="">
@@ -42,7 +42,7 @@
     </section>
     <section class="text-box" id="team">
         <div>
-            <div><p>Team</p></div>
+            <div><h2>Team</h2></div>
             <div>
                 <div class="box-team">
                     <img src="images/team-picture.png" alt="">
@@ -177,7 +177,7 @@
     </section>
     <section class="text-box" id="advisory-board">
         <div>
-            <div><p>Advisory Board</p></div>
+            <div><h2>Advisory Board</h2></div>
             <div>
                 <div class="box-team">
                     <img src="images/team-picture.png" alt="">
@@ -249,7 +249,7 @@
     </section>
     <section class="text-box" id="kontakt">
         <div>
-            <div><p>Kontakt</p></div>
+            <div><h2>Kontakt</h2></div>
             <div class="map">
                 <p>
                 Testaris AG <br>

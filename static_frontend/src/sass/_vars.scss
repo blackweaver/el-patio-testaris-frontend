@@ -2,7 +2,16 @@
 $color_main: #002856;
 $color_beige: #F0EEEB;
 
+/* Font root */
+
+$root: 18;
+
 /* Screens */
 $screen-small: 720px;
 $screen-medium: 1024px;
 $screen-wide: 1280px;
+
+/* Margin by screen */
+$m-small: 5px;
+$m-medium: 10px;
+$m-wide: 20px;

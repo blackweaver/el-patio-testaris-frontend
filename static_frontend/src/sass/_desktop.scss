@@ -1,9 +1,11 @@
 body {
     font-family: 'slab_regular' ,Arial, Helvetica, sans-serif;
-    font-size: 1em;
     line-height: 1.3em;
     color: white;
     background: white;
+    max-width: $screen-wide;
+    margin: $m-wide auto;
+
 
     .fix-float {
         clear: both;
@@ -21,16 +23,22 @@ body {
 
     header { 
         background: $color_main;
-        height: 100px;
+        height: 120px;
         -webkit-transition: height 1s;
         transition: height 1s;
 
+        h1 {
+            float: left;
+        }
+
         img:nth-child(1) {
             margin: 20px;
-            width: 300px;
+            width: 350px;
             -webkit-transition: width 1s;
             transition: width 1s;
         }
+
+        *::-ms-backdrop, img:nth-child(1) { width: auto; } /* IE11 */
 
         #ham {
             position: absolute;
@@ -50,12 +58,12 @@ body {
 
             ul {
                 float: right;
-                text-align: right;
                 width: 70%;
                 display: block;
                 height: 40px;
                 line-height: 40px;
                 margin-top: 10px;
+                font-size: get-size($root,18);
 
                 li {
                     display: inline;
@@ -65,6 +73,7 @@ body {
             
                 &.lang {
                     width: 30%;
+                    text-align: center;
                 }
             }
         }
@@ -74,18 +83,14 @@ body {
             position: fixed;
             z-index: 2000;
             width: 100%;
+            top: 0;
+            max-width: $screen-wide;
 
             img:nth-child(1) {
                 width: 200px;
             }
 
-            nav {
-                ul {
-                    height: 80px;
-                    line-height: 80px;
-                    margin-top: 0px;
-                }
-            }
+            *::-ms-backdrop, img:nth-child(1) { width: 70%; } 
         }
     }
 
@@ -98,7 +103,11 @@ body {
             max-width: $screen-wide;
             margin: 0 auto;
             padding: 50px 0;
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: 'slab_light';
+
+            strong {
+                font-family: 'slab_bold'; 
+            }
         }
 
         .slick-slide div {
@@ -109,7 +118,6 @@ body {
 
             h3 {
                 text-align: center;
-                font-size: .9em;
                 padding: 20px 0 10px 0;
                 font-family: 'slab_light_italic', Arial, Helvetica, sans-serif;
             }
@@ -122,7 +130,7 @@ body {
 
             p {
                 width: 80%;
-                font-size: 3em;
+                font-size: get-size($root,52);
                 line-height: 1.3em;
                 margin: 0 auto;
                 text-align: center;
@@ -166,33 +174,32 @@ body {
         &.text-box {
             color: $color_main;
             margin-top: 20px;
-            padding: 40px 0;
+            padding: 47px;
 
             > div {
                 max-width: $screen-wide;
                 margin: 0 auto;
                 text-align: left;
-                padding: 40px 0;
+                padding: 30px 0;
 
                 > div:nth-child(1) {
                     width: 20%;
                     float: left;
-                    font-size: 1.3em;
+                    font-size: get-size($root,24);
                     padding-bottom: 20px;
                 }
                 > div:nth-child(2) {
                     width: 70%;
                     float: left;
-                    font-size: 1.8em;
-                    line-height: 1.3em;
+                    font-size: get-size($root,27);
+                    line-height: 2rem;
                     padding-bottom: 20px;
-                    font-family: Arial, Helvetica, sans-serif;
 
                     .box {
                         float: left;
                         width: (100 / 3) * 1%;
+                        font-size: get-size($root,18);
                         text-align: left;
-                        font-size: .6em;
                         line-height: normal;
 
                         img {
@@ -200,7 +207,11 @@ body {
                         }
 
                         h4 {
-                            font-size: 1.2em;
+                            font-family: 'slab_bold';
+                        }
+
+                        p {
+                            width: 90%;
                         }
 
                         a {
@@ -212,9 +223,9 @@ body {
                         float: left;
                         width: (100 / 3) * 1%;
                         text-align: left;
-                        font-size: .5em;
-                        line-height: 1.3em;
+                        font-size: get-size($root,27);
                         height: 540px;
+                        line-height: 1rem;
                         overflow: hidden;
 
                         img {
@@ -223,7 +234,7 @@ body {
                         }
 
                         h4 {
-                            font-size: 1.2em;
+                            font-size: get-size($root,18);
                             text-align: left;
                             padding-bottom: 10px;
                             width: 80%;
@@ -235,6 +246,7 @@ body {
                             border-bottom: 1px $color_main dotted;
                             margin-bottom: 10px;
                             padding-bottom: 10px;
+                            font-size: get-size($root,12);
 
                             dt {
                                 font-weight: bold;
@@ -250,6 +262,7 @@ body {
 
                         p {
                             text-align: left;
+                            font-size: get-size($root,12);
                             width: 80%;
                             margin-bottom: 10px;
                         }
@@ -269,7 +282,7 @@ body {
                     width: 10%;
                     float: left;
                     text-align: center;
-                    margin-top: 380px;
+                    margin-top: 280px;
                     color: $color_main;
 
                     a {
@@ -304,6 +317,7 @@ body {
 
                     p {
                         float: left;
+                        margin-right: 15px;
                     }
 
                     a {
@@ -345,10 +359,17 @@ body {
         background: $color_main;
         address {
             float: left;
+            font-size: get-size($root,24);
+            line-height: 1.8rem;
 
             p {
                 padding: 20px;
                 padding-bottom: 0;
+
+                a {
+                    font-size: get-size($root,18);
+                }
+                
             }
         }
 

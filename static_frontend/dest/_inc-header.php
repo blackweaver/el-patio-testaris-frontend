@@ -1,5 +1,5 @@
 <header>
-        <a href="index.php"><img src="images/logo.svg" alt=""></a>
+        <h1><a href="index.php"><img src="images/logo.svg" alt="Testaris"></a></h1>
         <a href="#" id="ham"></a>
         <nav>
             <ul class="lang">
