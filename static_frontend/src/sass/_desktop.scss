@@ -36,7 +36,7 @@ body {
         background: $color_main;
         padding: $mb-wide;
         box-sizing: content-box;
-        transition: all 1s;
+        transition: padding 1s;
 
         h1 {
             float: left;
@@ -44,7 +44,7 @@ body {
 
         img:nth-child(1) {
             width: 350px;
-            transition: all 1s;
+            transition: width 1s;
         }
 
         *::-ms-backdrop, img:nth-child(1) { width: auto; } /* IE11 */
@@ -210,6 +210,7 @@ body {
                 max-width: $screen-wide;
                 margin: 0 auto;
                 text-align: left;
+                position: relative;
 
                 > div:nth-child(1) {
                     width: 20%;
@@ -313,12 +314,14 @@ body {
                 > div:nth-child(3) {
                     width: 20%;
                     float: left;
-                    text-align: center;
-                    margin-top: 280px;
                     color: $color_main;
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    text-align: right;
 
                     a {
-                        display: block;
+                        color: $color_main;
                     }
                 }
 
@@ -345,6 +348,7 @@ body {
                     float: left;
                     text-align: left;
                     margin-top: 0px;
+                    position: relative;
 
                     p {
                         float: left;
@@ -356,14 +360,13 @@ body {
                     }
                 }
                 > div.map:nth-child(4) {
-                    width: 10%;
-                    float: right;
-                    text-align: center;
-                    margin-top: 380px;
                     color: $color_main;
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
 
                     a {
-                        display: block;
+                        color: $color_main;
                     }
                 }
 
@@ -390,6 +393,21 @@ body {
                             list-style-type: disc;
                             margin-left: 30px;
                         }
+                    }
+                }
+
+                .revision {
+                    p, ul {
+                        font-size: get-size($root,27);
+                        font-family: 'slab_light';
+                    }
+                }
+
+                .datenschutz {
+                    p {
+                        font-size: get-size($root,18);
+                        font-family: 'slab_light';
+                        line-height: 1.5rem;
                     }
                 }
             }

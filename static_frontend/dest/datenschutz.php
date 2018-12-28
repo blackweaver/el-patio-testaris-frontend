@@ -4,7 +4,7 @@
     <section class="text-box">
         <div>
             <div><p>Datenschutz</p></div>
-            <div class="pages-block">
+            <div class="pages-block datenschutz">
                 <p>Wir legen Wert auf Ihre Privatsphäre. Daher bearbeiten wir Personendaten nur in Überein­stimmung mit dem anwendbaren Datenschutzrecht, einschliesslich dem Schweizerischen 
                 Bundesgesetz über den Datenschutz vom 19. Juni 1992 und, soweit relevant, der am 25. Mai 2018 wirksam werdenden EU-Daten-schutzgrundverordnung (DSGVO). Wir informieren Sie deshalb gerne über die Datenbearbeitung, welche wir in unserer Beziehung mit Ihnen vornehmen.
                 </p>
