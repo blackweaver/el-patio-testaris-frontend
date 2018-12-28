@@ -43,6 +43,10 @@
                     width: auto;
                     margin-top: 30px;
                     float: none;
+
+                    li {
+                        padding: 0 6px;
+                    }
                 
                     &.lang {
                         position: absolute;
