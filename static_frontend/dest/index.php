@@ -5,7 +5,7 @@
     <section class="text-box" id="uberuns">
         <div>
             <div><h2>über uns</h2></div>
-            <div>
+            <div class="text-uber">
                 <p>Tusdant vel ma quibusaped moluptas autatur autempora consendaera nam rerempos quam aut lit occumque estrumquam dolutem si am reheniet dolest que conseque pratur re plabore stiuscipis endignatur aut quia quatur,  que lame volorpori occulpa quiatumquam, simusam sedit voluptaera inctasi tatusam ani corum nullab iusaperum inus a volupta venet lique nectur aut dolor se susame occusanda. </p>
                 <p>Aquis magnihi litasinum quiatquis dolorio nsequam fuga.  Lore nis repudam, nem el et estinima sequodi tatque sequo volorehent voluptas inihillorum si que expla con quatuscium, nissin nimusandae intion nisciat accust vellum.</p>
             </div>

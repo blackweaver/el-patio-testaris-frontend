@@ -206,6 +206,10 @@ body {
                     line-height: 2rem;
                     padding-bottom: 20px;
 
+                    &.text-uber {
+                        font-family: 'slab_light';
+                    }
+
                     .box {
                         float: left;
                         width: (100 / 3) * 1%;
