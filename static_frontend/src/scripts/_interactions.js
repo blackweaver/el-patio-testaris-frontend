@@ -1,5 +1,23 @@
 $(document).ready(function() {
 
+	/* Set vars */
+
+	let device_margin = 20;
+
+	if($(this).width() > 1024) {
+		device_margin = 20;
+	} else if($(this).width() > 720) {
+		device_margin = 10;
+	} else {
+		device_margin = 5;
+	}
+
+	if($( this ).width() < 1280) {
+		document.querySelector("header").style.maxWidth = $(this).width() - device_margin * 2 + "px";
+	} else {
+		document.querySelector("header").style.maxWidth = "";
+	}
+
 	/* Slider setup */
 
 	$(".slider").slick({
@@ -10,6 +28,7 @@ $(document).ready(function() {
 	/* Go top */
 
 	const btn_top = document.querySelectorAll(".top");
+
 	for(let i=0;i<btn_top.length;i++) {
 		btn_top[i].addEventListener('click', goTop);
 	}
@@ -60,8 +79,12 @@ $(document).ready(function() {
 		e.preventDefault();
 	}
 
-	$(document).resize(function() {
-		$( "#log" ).append( "<div>Handler for .resize() called.</div>" );
+	$(window).resize(function() {
+		if( $( this ).width() > 720 && $( this ).width() < 1280 ) {
+			document.querySelector("header").style.maxWidth = $(this).width() - device_margin * 2 + "px";
+		} else {
+			document.querySelector("header").style.maxWidth = "";
+		}
 	});
 
 	$(document).scroll(function() {
