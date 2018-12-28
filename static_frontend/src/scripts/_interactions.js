@@ -13,7 +13,7 @@ $(document).ready(function() {
 	}
 
 	if($( this ).width() < 1280) {
-		document.querySelector("header").style.maxWidth = $(this).width() - device_margin * 2 + "px";
+		document.querySelector("header").style.maxWidth = $(this).width() - device_margin * 6 + "px";
 	} else {
 		document.querySelector("header").style.maxWidth = "";
 	}
@@ -80,8 +80,8 @@ $(document).ready(function() {
 	}
 
 	$(window).resize(function() {
-		if( $( this ).width() > 720 && $( this ).width() < 1280 ) {
-			document.querySelector("header").style.maxWidth = $(this).width() - device_margin * 2 + "px";
+		if( $( this ).width() < 1280 ) {
+			document.querySelector("header").style.maxWidth = $(this).width() - device_margin * 6 + "px";
 		} else {
 			document.querySelector("header").style.maxWidth = "";
 		}

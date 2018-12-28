@@ -34,19 +34,17 @@ body {
 
     header { 
         background: $color_main;
-        height: 120px;
-        -webkit-transition: height 1s;
-        transition: height 1s;
+        padding: $mb-wide;
+        transition: all 1s;
+        box-sizing: content-box;
 
         h1 {
             float: left;
         }
 
         img:nth-child(1) {
-            margin: 20px;
             width: 350px;
-            -webkit-transition: width 1s;
-            transition: width 1s;
+            transition: all 1s;
         }
 
         *::-ms-backdrop, img:nth-child(1) { width: auto; } /* IE11 */
@@ -71,14 +69,11 @@ body {
                 float: right;
                 width: 70%;
                 display: block;
-                height: 40px;
-                line-height: 40px;
-                margin-top: 10px;
                 font-size: get-size($root,18);
 
                 li {
                     display: inline;
-                    padding: 0 8px;
+                    padding: 0 6px;
                     text-align: center;
                 }
             
@@ -89,6 +84,12 @@ body {
                     li {
                         border-right: white 2px solid;
 
+                        &.active {
+                            a {
+                                text-decoration: underline;
+                            }
+                        }
+
                         &:last-child {
                             border: none;;
                         }
@@ -98,12 +99,11 @@ body {
         }
 
         &.sticky {
-            height: 80px;
             position: fixed;
             z-index: 2000;
             width: 100%;
             top: 0;
-            max-width: $screen-wide;
+            max-width: $screen-wide - $mb-wide * 2;
 
             img:nth-child(1) {
                 width: 200px;

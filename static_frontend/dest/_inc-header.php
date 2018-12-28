@@ -3,7 +3,7 @@
         <a href="#" id="ham"></a>
         <nav>
             <ul class="lang">
-                <li>
+                <li class="active">
                     <a href="#">DE</a>
                 </li>
                 <li>
@@ -31,4 +31,5 @@
                 </li>
             </ul>
         </nav>
+        <div class="fix-float"></div>
     </header>

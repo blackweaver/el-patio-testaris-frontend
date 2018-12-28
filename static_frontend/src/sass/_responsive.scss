@@ -30,8 +30,8 @@
         margin: $m-medium ;
         
         header { 
-            height: 80px;
-    
+            padding: $mb-medium;
+
             img:nth-child(1) {
                 width: 200px;
             }
@@ -41,7 +41,6 @@
                 width: 65%;
                 ul {
                     width: auto;
-                    margin-top: 30px;
                     float: none;
 
                     li {
@@ -51,7 +50,6 @@
                     &.lang {
                         position: absolute;
                         right: 0;
-                        margin: 0 10px 0 0;
                         width: 20%;
                     }
                 }
@@ -62,14 +60,7 @@
                 top: 0;
                 z-index: 2000;
                 width: 100%;
-
-                ul {
-                    text-align: center;
-                    margin-right: 20px;
-                    &.lang {
-                        top: 0;
-                    }
-                }
+                max-width: $screen-medium - $mb-medium * 2;
             }
         }
 
@@ -100,11 +91,11 @@
 
         header { 
             text-align: left;
-            height: 80px;
             width: 100%;
             position: fixed;
             top: 0;
             z-index: 1001;
+            padding: $mb-small;
 
             img:nth-child(1) {
                 width: 200px;
