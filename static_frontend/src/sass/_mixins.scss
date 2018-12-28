@@ -8,32 +8,6 @@
     100% { left: -250px; }
 }
 
-@mixin pages-block {
-    padding-bottom: 200px;
-    font-size: 1.2em;
-
-    p {
-        margin-bottom: 20px;
-    }
-
-    a {
-        color: $color_main;
-        font-weight: bold;
-
-        &:hover {
-            text-decoration: underline;
-        }
-    }
-
-    ul {
-        li {
-            display: list-item;
-            list-style-type: disc;
-            margin-left: 30px;
-        }
-    }
-}
-
 @mixin animation {
     -webkit-animation-duration: .5s;
     -webkit-animation-delay: 0s;

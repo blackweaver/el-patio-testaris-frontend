@@ -91,6 +91,14 @@
                 }
             }
         }
+
+        footer {
+            padding: $mb-medium;
+            padding-top: $mb-medium * 2;
+            padding-bottom: $mb-medium * 2;
+            margin-bottom: $m-medium;
+            margin-bottom: $m-medium;
+        }
     }
     
 }
@@ -190,6 +198,10 @@
             }
 
             .slick-slide div {
+                h3 {
+                    font-size: get-size($root,14);
+                }
+
                 p {
                    font-size: get-size($root,22);
                 }
@@ -294,6 +306,12 @@
         }
         footer {
             text-align: center;
+            padding: $mb-small;
+            padding-top: $mb-small * 2;
+            padding-bottom: $mb-small * 2;
+            margin-bottom: $m-small;
+            margin-bottom: $m-small;
+
             address {
                 float: none;
             }

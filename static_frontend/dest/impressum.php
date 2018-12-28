@@ -4,7 +4,7 @@
     <section class="text-box" id="uber-uns">
         <div>
             <div><p>Impressum</p></div>
-            <div class="impressum">
+            <div class="pages-block">
                 <p>Testaris AG <br>
                 Malzgasse 18<br>
                 CH-4052 Basel

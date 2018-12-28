@@ -328,6 +328,8 @@ body {
                     width: 20%;
                     float: left;
                     padding-bottom: 20px;
+                    font-size: get-size($root,18);
+                    line-height: 1.5rem;
 
                     a {
                         color: $color_main;
@@ -365,18 +367,30 @@ body {
                     }
                 }
 
-                div.impressum {
-                    @include pages-block;
+                .pages-block {
+                    padding-bottom: 200px;
+                    font-size: 1.2em;
                 
-                }
-
-                div.revision {
-                    @include pages-block;
-                    padding-bottom: 250px;
-                }
-
-                div.datenschutz {
-                    @include pages-block;
+                    p {
+                        margin-bottom: 20px;
+                    }
+                
+                    a {
+                        color: $color_main;
+                        font-weight: bold;
+                
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                
+                    ul {
+                        li {
+                            display: list-item;
+                            list-style-type: disc;
+                            margin-left: 30px;
+                        }
+                    }
                 }
             }
         }
@@ -386,6 +400,10 @@ body {
 
     footer {
         background: $color_main;
+        padding: $mb-wide;
+        padding-top: $mb-wide;
+        padding-bottom: $mb-wide;
+        margin-bottom: $m-wide;
         margin-bottom: $m-wide;
 
         address {
@@ -394,8 +412,6 @@ body {
             line-height: 1.8rem;
 
             p {
-                padding: 20px;
-                padding-bottom: 0;
 
                 a {
                     font-size: get-size($root,18);
@@ -406,7 +422,6 @@ body {
 
         img {
             float: right;
-            margin: 20px;
         }
     }
 }
