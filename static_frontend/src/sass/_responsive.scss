@@ -14,15 +14,20 @@
     left: -250px;
 }
 
+@media (min-width: 1320px) {
+    body {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 @media (max-width: $screen-medium) {
     $root: 16px;
     html {
         font-size: $root;
     }
     body {
-        margin: $m-medium auto;
-        margin-left: $m-medium;
-        margin-right: $m-medium;
+        margin: $m-medium ;
         
         header { 
             height: 80px;
@@ -87,9 +92,7 @@
         font-size: $root;
     }
     body {
-        margin: $m-small auto;
-        margin-left: $m-small;
-        margin-right: $m-small;
+        margin: $m-small;
 
         header { 
             text-align: left;
