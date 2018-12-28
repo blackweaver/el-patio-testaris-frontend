@@ -1,3 +1,14 @@
+$root: 18;
+
+html {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -webkit-text-size-adjust: 100%;
+    font-size: 18px;
+}
+
 body {
     font-family: 'slab_regular' ,Arial, Helvetica, sans-serif;
     line-height: 1.3em;
@@ -101,7 +112,7 @@ body {
         .slider {
             width: 100%;
             max-width: $screen-wide;
-            margin: 0 auto;
+            margin: $m-wide auto;
             padding: 50px 0;
             font-family: 'slab_light';
 
@@ -173,7 +184,7 @@ body {
 
         &.text-box {
             color: $color_main;
-            margin-top: 20px;
+            margin-bottom: $m-wide;
             padding: 47px;
 
             > div {
@@ -270,7 +281,6 @@ body {
                         a {
                             color: $color_main;
                             font-weight: bold;
-                            font-size: .9em;
 
                             &:hover {
                                 text-decoration: underline;
@@ -295,14 +305,11 @@ body {
                 > div.map:nth-child(2) {
                     width: 20%;
                     float: left;
-                    font-size: 1.1em;
-                    line-height: 1.3em;
                     padding-bottom: 20px;
 
                     a {
                         color: $color_main;
                         font-weight: bold;
-                        font-size: .9em;
 
                         &:hover {
                             text-decoration: underline;
@@ -357,6 +364,8 @@ body {
 
     footer {
         background: $color_main;
+        margin-bottom: $m-wide;
+
         address {
             float: left;
             font-size: get-size($root,24);

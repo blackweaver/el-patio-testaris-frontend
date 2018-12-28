@@ -16,6 +16,9 @@
 
 @media (max-width: $screen-medium) {
     $root: 16px;
+    html {
+        font-size: $root;
+    }
     body {
         margin: $m-medium auto;
         margin-left: $m-medium;
@@ -80,6 +83,9 @@
 
 @media (max-width: $screen-small) {
     $root: 14px;
+    html {
+        font-size: $root;
+    }
     body {
         margin: $m-small auto;
         margin-left: $m-small;
