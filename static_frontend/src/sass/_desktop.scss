@@ -85,6 +85,14 @@ body {
                 &.lang {
                     width: 30%;
                     text-align: center;
+
+                    li {
+                        border-right: white 2px solid;
+
+                        &:last-child {
+                            border: none;;
+                        }
+                    }
                 }
             }
         }
