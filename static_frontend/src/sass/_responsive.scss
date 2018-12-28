@@ -22,7 +22,7 @@
 }
 
 @media (max-width: $screen-medium) {
-    $root: 16px;
+    $root: 16;
     html {
         font-size: $root;
     }
@@ -65,7 +65,21 @@
         }
 
         section {
+
+            padding: $mb-medium;
+            padding-left: $m-medium / 2;
+            padding-right: $m-medium / 2;
+            padding-bottom: $m-medium * 6;
+            margin-bottom: $m-medium;
+            margin-top: $m-medium;
+
+
             &.text-box {
+
+                padding: $mb-medium;
+                padding-top: $mb-medium * 2;
+                padding-bottom: $mb-medium * 2;
+                margin-bottom: $m-medium;
             
                 > div {
                     max-width: 95%;
@@ -82,7 +96,7 @@
 }
 
 @media (max-width: $screen-small) {
-    $root: 14px;
+    $root: 14;
     html {
         font-size: $root;
     }
@@ -163,10 +177,22 @@
             }
         }
         section {
+            padding: $mb-small;
+            padding-left: $m-small / 2;
+            padding-right: $m-small / 2;
+            padding-bottom: $m-small * 6;
+            margin-bottom: $m-small;
+            margin-top: $m-small;
 
             .slider {
                 margin-top: 80px;
                 padding: 20px 0;
+            }
+
+            .slick-slide div {
+                p {
+                   font-size: get-size($root,22);
+                }
             }
 
             .slick-prev,
@@ -177,7 +203,10 @@
 
             &.text-box {
                 color: $color_main;
-                padding: 10px 0;
+                padding: $mb-small;
+                padding-top: $mb-small * 2;
+                padding-bottom: $mb-small * 2;
+                margin-bottom: $m-small;
                 
                 > div {
     
@@ -243,15 +272,8 @@
                 }
 
             }
-    
-            .slick-prev:before,
-            .slick-next:before {
-                font-size: 30px;
-            }
 
             .slick-slide div {
-
-                height: 150px;
     
                 h3 {
                     padding: 10px 0;
