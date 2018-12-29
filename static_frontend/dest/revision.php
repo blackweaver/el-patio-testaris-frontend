@@ -2,7 +2,6 @@
 <body>
     <?php include('_inc-header.php') ?>
     <section class="text-box">
-        <div>
             <div><p>Revision</p></div>
             <div class="pages-block revision">
                 <p>Tusdant vel ma quibusaped moluptas autatur autempora. Tusdant vel ma quibusaped moluptas autatur autempora consendaera nam rerempos quam aut lit occumque estrumquam dolutem si am reheniet dolest que conseque.
@@ -20,7 +19,6 @@
             </div>
             <div></div>
             <div class="fix-float"></div>
-        </div>
     </section>
     <?php include('_inc-footer.php') ?>
     <?php include('_inc-js.php') ?>			

@@ -2,7 +2,6 @@
 <body>
     <?php include('_inc-header.php') ?>
     <section class="text-box" id="uber-uns">
-        <div>
             <div><p>Impressum</p></div>
             <div class="pages-block">
                 <p>Testaris AG <br>
@@ -28,7 +27,6 @@
             </div>
             <div></div>
             <div class="fix-float"></div>
-        </div>
     </section>
     <?php include('_inc-footer.php') ?>
     <?php include('_inc-js.php') ?>			

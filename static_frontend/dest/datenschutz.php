@@ -2,7 +2,6 @@
 <body>
     <?php include('_inc-header.php') ?>
     <section class="text-box">
-        <div>
             <div><p>Datenschutz</p></div>
             <div class="pages-block datenschutz">
                 <p>Wir legen Wert auf Ihre Privatsphäre. Daher bearbeiten wir Personendaten nur in Überein­stimmung mit dem anwendbaren Datenschutzrecht, einschliesslich dem Schweizerischen 
@@ -30,7 +29,6 @@
             </div>
             <div></div>
             <div class="fix-float"></div>
-        </div>
     </section>
     <?php include('_inc-footer.php') ?>
     <?php include('_inc-js.php') ?>			
