@@ -68,8 +68,6 @@ body {
 
             ul {
                 float: right;
-                // width: 70%;
-                display: inline-block;
                 font-size: get-size($root,18);
 
                 li {
@@ -79,7 +77,6 @@ body {
                 }
             
                 &.lang {
-                    // width: 30%;
                     text-align: center;
                     margin-left: 5%;
 
@@ -203,9 +200,7 @@ body {
 
         &.text-box {
             color: $color_main;
-            padding: $mb-wide;
-            padding-top: $mb-wide * 2;
-            padding-bottom: $mb-wide * 2;
+            padding: $mb-wide*2 $mb-wide $mb-wide*2;
             margin-bottom: $m-wide;
 
             > div {
@@ -425,9 +420,6 @@ body {
     footer {
         background: $color_main;
         padding: $mb-wide;
-        padding-top: $mb-wide;
-        padding-bottom: $mb-wide;
-        margin-bottom: $m-wide;
         margin-bottom: $m-wide;
 
         address {
