@@ -221,6 +221,8 @@ body {
                     font-size: get-size($root,27);
                     line-height: 2rem;
                     padding-bottom: 20px;
+                    margin-left: -$mb-wide / 2;
+                    margin-right: -$mb-wide / 2;
 
                     &.text-uber {
                         font-family: 'slab_light';
