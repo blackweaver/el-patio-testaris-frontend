@@ -84,10 +84,10 @@
                 margin-bottom: $m-medium;
             
                 > div {
-                    max-width: 95%;
+                    // max-width: 95%;
                     > div:nth-child(2) {
                         .box-team {
-                            height: 450px;
+                            min-height: 450px;
                         }
                     }
                 }
@@ -104,6 +104,27 @@
     }
     
 }
+
+@media ( min-width:$screen-small ) and (max-width: $tablet-and-down) {
+    $root: 16;
+    html {
+        font-size: $root * 1px;
+    }
+
+    .text-box > div {
+        > div:nth-child(1) {
+            width: 100% !important;
+            padding-bottom: 30px !important;
+        }
+        > div:nth-child(2) {
+            width: 100% !important;
+        }
+        > div:nth-child(3) {
+            bottom: -15px !important;
+        }
+    }
+}
+
 
 @media (max-width: $screen-small) {
     $root: 14;
