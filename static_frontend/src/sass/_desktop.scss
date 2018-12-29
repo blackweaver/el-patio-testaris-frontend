@@ -115,10 +115,7 @@ body {
     section {
 
         background: $color_beige;
-        padding: $mb-wide;
-        padding-left: $m-wide / 2;
-        padding-right: $m-wide / 2;
-        padding-bottom: $m-wide * 6;
+        padding: $mb-wide $m-wide/2 $m-wide*6;
         box-sizing: border-box;
         margin-bottom: $m-wide;
         margin-top: $m-wide;
