@@ -205,63 +205,34 @@ body {
             padding-top: $mb-wide * 2;
             padding-bottom: $mb-wide * 2;
             margin-bottom: $m-wide;
+            position: relative;
+                
 
-            > div {
-                max-width: $screen-wide;
-                margin: 0 auto;
-                text-align: left;
-                position: relative;
+            > div:nth-child(1) {
+                width: 20%;
+                float: left;
+                font-size: get-size($root,24);
+                padding-bottom: 20px;
+            }
+            > div:nth-child(2) {
+                width: 60%;
+                float: left;
+                font-size: get-size($root,27);
+                line-height: 2rem;
+                padding-bottom: 20px;
 
-                > div:nth-child(1) {
-                    width: 20%;
-                    float: left;
-                    font-size: get-size($root,24);
-                    padding-bottom: 20px;
+                &.text-uber {
+                    font-family: 'slab_light';
                 }
-                > div:nth-child(2) {
-                    width: 60%;
-                    float: left;
-                    font-size: get-size($root,27);
-                    line-height: 2rem;
-                    padding-bottom: 20px;
 
-                    &.text-uber {
-                        font-family: 'slab_light';
-                    }
+                ul.grid {
+                    list-style-type: none;
 
-                    .box {
-                        float: left;
-                        width: (100 / 3) * 1%;
-                        font-size: get-size($root,18);
-                        text-align: left;
-                        line-height: normal;
-
-                        img {
-                            width: 60%;
-                        }
-
-                        h4 {
-                            font-family: 'slab_bold';
-                        }
-
-                        p {
-                            width: 90%;
-                        }
-
-                        a {
-                            color: $color_main;
-                            font-size: get-size($root,12);
-                            font-family: 'slab_bold';
-                        }
-                    }
-
-                    .box-team {
-                        float: left;
-                        width: (100 / 3) * 1%;
-                        text-align: left;
+                    li {
+                        display: inline-block;
                         font-size: get-size($root,27);
+                        width: ((100 / 3) * 1%) - 1;
                         line-height: 1rem;
-                        overflow: hidden;
                         padding: $mb-wide / 2;
                         box-sizing: border-box;
 
@@ -269,69 +240,93 @@ body {
                             width: 100%;
                             margin-bottom: $mb-wide / 2;
                         }
-
+    
                         h4 {
                             font-size: get-size($root,18);
                             text-align: left;
                             padding-bottom: 10px;
                         }
-
+    
                         dl {
                             text-align: left;
                             border-bottom: 1px $color_main dotted;
                             margin-bottom: 10px;
                             padding-bottom: 10px;
                             font-size: get-size($root,12);
-
+    
                             dt {
                                 font-weight: bold;
                                 padding-bottom: 5px;
                             }
-
+    
                             dd {
                                 display: list-item;
                                 list-style-type: disc;
                                 margin-left: 25px;
                             }
                         }
-
+    
                         p {
                             text-align: left;
                             font-size: get-size($root,12);
-                            width: 80%;
                             margin-bottom: 10px;
                         }
-
+    
                         a {
                             color: $color_main;
                             font-weight: bold;
-
+    
                             &:hover {
                                 text-decoration: underline;
                             }
                         }
                     }
                 }
-                > div:nth-child(3) {
-                    width: 20%;
-                    float: left;
-                    color: $color_main;
-                    position: absolute;
-                    bottom: 0;
-                    right: 0;
-                    text-align: right;
 
-                    a {
-                        color: $color_main;
+                ul.icons {
+
+                    li {
+                        img {
+                            width: 60%;
+                        }
+
+                        h4 {
+                            font-family: 'slab_bold';
+                            font-size: get-size($root,18);
+                            padding-bottom: 0;
+                        }
+
+                        p {
+                            font-size: get-size($root,18);
+                            margin-bottom: 0;
+                        }
+
+                        a {
+                            color: $color_main;
+                            font-size: get-size($root,12);
+                            font-family: 'slab_bold';
+                        }
                     }
                 }
+            }
+            > div:nth-child(3) {
+                width: 20%;
+                color: $color_main;
+                position: absolute;
+                bottom: $mb-wide;
+                right: $mb-wide;
+                text-align: right;
+
+                a {
+                    color: $color_main;
+                }
+            }
 
                 /* Map */
 
                 > div.map:nth-child(2) {
                     width: 20%;
                     float: left;
-                    padding-bottom: 20px;
                     font-size: get-size($root,18);
                     line-height: 1.5rem;
 
@@ -350,6 +345,8 @@ body {
                     text-align: left;
                     margin-top: 0px;
                     position: relative;
+                    right: 0;
+                    bottom: 0;
 
                     p {
                         float: left;
@@ -363,8 +360,8 @@ body {
                 > div.map:nth-child(4) {
                     color: $color_main;
                     position: absolute;
-                    bottom: 0;
-                    right: 0;
+                    bottom: $mb-wide;
+                    right: $mb-wide;
 
                     a {
                         color: $color_main;
@@ -414,7 +411,7 @@ body {
                         font-family: 'slab_light';
                     }
                 }
-            }
+    
         }
 
         
