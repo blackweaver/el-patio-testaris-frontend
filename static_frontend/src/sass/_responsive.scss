@@ -226,9 +226,7 @@
 
             &.text-box {
                 color: $color_main;
-                padding: $mb-small;
-                padding-top: $mb-small * 2;
-                padding-bottom: $mb-small * 2;
+                padding: $mb-small*2 $mb-small $mb-small*2;
                 margin-bottom: $m-small;
                 
                 > div {
