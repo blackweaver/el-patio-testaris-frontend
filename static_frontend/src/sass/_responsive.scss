@@ -27,7 +27,7 @@
         font-size: $root * 1px;
     }
     body {
-        margin: $m-medium ;
+        margin: $m-medium;
         
         header { 
             padding: $mb-medium;
@@ -38,10 +38,10 @@
             *::-ms-backdrop, img:nth-child(1) { width: 70%; } /* IE11 */
     
             nav {
-                width: 65%;
+                // width: 75%;
                 ul {
                     width: auto;
-                    float: none;
+                    // float: none;
                     text-align: right;
 
                     li {
@@ -49,8 +49,10 @@
                     }
                 
                     &.lang {
-                        text-align: right;
+                        // text-align: right;
                         width: auto;
+                        float: right;
+                        margin-bottom: 10px; 
                     }
                 }
             }

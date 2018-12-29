@@ -34,7 +34,7 @@ body {
 
     header { 
         background: $color_main;
-        padding: $mb-wide;
+        padding: $mb-wide $mb-wide $mb-wide/8*7 $mb-wide;
         box-sizing: border-box;
         transition: padding 1s;
 
@@ -45,6 +45,7 @@ body {
         img:nth-child(1) {
             width: 350px;
             transition: width 1s;
+            float: left;
         }
 
         *::-ms-backdrop, img:nth-child(1) { width: auto; } /* IE11 */
@@ -62,13 +63,13 @@ body {
         }
 
         nav {
-            width: 60%;
+            width: 70%;
             float: right;
 
             ul {
                 float: right;
-                width: 70%;
-                display: block;
+                // width: 70%;
+                display: inline-block;
                 font-size: get-size($root,18);
 
                 li {
@@ -78,8 +79,9 @@ body {
                 }
             
                 &.lang {
-                    width: 30%;
+                    // width: 30%;
                     text-align: center;
+                    margin-left: 5%;
 
                     li {
                         border-right: white 2px solid;
