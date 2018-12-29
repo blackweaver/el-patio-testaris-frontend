@@ -24,7 +24,7 @@
 @media (max-width: $screen-medium) {
     $root: 16;
     html {
-        font-size: $root;
+        font-size: $root * 1px;
     }
     body {
         margin: $m-medium ;
@@ -106,7 +106,7 @@
 @media (max-width: $screen-small) {
     $root: 14;
     html {
-        font-size: $root;
+        font-size: $root * 1px;
     }
     body {
         margin: $m-small;
