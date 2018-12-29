@@ -3,5 +3,7 @@
 @import "_fonts";
 @import "_vars";
 @import "_mixins";
-@import "_desktop";
-@import "_responsive";
+@import "base";
+@import "modules";
+@import "desktop";
+@import "responsive";

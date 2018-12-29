@@ -1,0 +1,13 @@
+.back-to-top {
+    width: 20%;
+    float: left;
+    color: $color_main;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: right;
+
+    a {
+        color: $color_main;
+    }
+}

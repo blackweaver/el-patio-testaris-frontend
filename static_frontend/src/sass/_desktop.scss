@@ -221,8 +221,6 @@ body {
                     font-size: get-size($root,27);
                     line-height: 2rem;
                     padding-bottom: 20px;
-                    margin-left: -$mb-wide / 2;
-                    margin-right: -$mb-wide / 2;
 
                     &.text-uber {
                         font-family: 'slab_light';
@@ -261,7 +259,6 @@ body {
                         font-size: get-size($root,27);
                         line-height: 1rem;
                         overflow: hidden;
-                        padding: $mb-wide / 2;
                         box-sizing: border-box;
 
                         img {
@@ -310,25 +307,12 @@ body {
                             }
                         }
                     }
-                }
-                > div:nth-child(3) {
-                    width: 20%;
-                    float: left;
-                    color: $color_main;
-                    position: absolute;
-                    bottom: 0;
-                    right: 0;
-                    text-align: right;
-
-                    a {
-                        color: $color_main;
-                    }
-                }
+                }            
 
                 /* Map */
 
                 > div.map:nth-child(2) {
-                    width: 20%;
+                    width: 30%;
                     float: left;
                     padding-bottom: 20px;
                     font-size: get-size($root,18);
@@ -344,7 +328,7 @@ body {
                     }
                 }
                 > div.map:nth-child(3) {
-                    width: 45%;
+                    width: 50%;
                     float: left;
                     text-align: left;
                     margin-top: 0px;
@@ -357,16 +341,6 @@ body {
 
                     a {
                         display: inline;
-                    }
-                }
-                > div.map:nth-child(4) {
-                    color: $color_main;
-                    position: absolute;
-                    bottom: 0;
-                    right: 0;
-
-                    a {
-                        color: $color_main;
                     }
                 }
 
@@ -413,6 +387,15 @@ body {
                         font-family: 'slab_light';
                     }
                 }
+            }
+        }
+        .grid-container {
+            margin-left: -$mb-wide / 2;
+            margin-right: -$mb-wide / 2;
+
+            > * {
+                box-sizing: border-box;
+                padding: $mb-wide / 2;
             }
         }
 
