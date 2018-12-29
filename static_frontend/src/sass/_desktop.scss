@@ -111,6 +111,15 @@ body {
 
             *::-ms-backdrop, img:nth-child(1) { width: 70%; } 
         }
+
+        &.fix-sticky-size {
+            padding-left: 0;
+            padding-right: 0;
+
+            img:nth-child(1) {
+                margin: 0 20px 0 20px;
+            }
+        }
     }
 
     section {
@@ -250,6 +259,8 @@ body {
 
                         a {
                             color: $color_main;
+                            font-size: get-size($root,12);
+                            font-family: 'slab_bold';
                         }
                     }
 
@@ -258,25 +269,24 @@ body {
                         width: (100 / 3) * 1%;
                         text-align: left;
                         font-size: get-size($root,27);
-                        height: 540px;
                         line-height: 1rem;
                         overflow: hidden;
+                        padding: $mb-wide / 2;
+                        box-sizing: border-box;
 
                         img {
-                            width: 80%;
-                            margin-bottom: 10px;
+                            width: 100%;
+                            margin-bottom: $mb-wide / 2;
                         }
 
                         h4 {
                             font-size: get-size($root,18);
                             text-align: left;
                             padding-bottom: 10px;
-                            width: 80%;
                         }
 
                         dl {
                             text-align: left;
-                            width: 80%;
                             border-bottom: 1px $color_main dotted;
                             margin-bottom: 10px;
                             padding-bottom: 10px;
@@ -371,11 +381,13 @@ body {
                 }
 
                 .pages-block {
+                    min-height: 600px;
                     padding-bottom: 200px;
-                    font-size: 1.2em;
                 
                     p {
                         margin-bottom: 20px;
+                        font-size: get-size($root,18);
+                        line-height: 1.5rem;
                     }
                 
                     a {
@@ -396,10 +408,12 @@ body {
                     }
                 }
 
+
                 .revision {
                     p, ul {
                         font-size: get-size($root,27);
                         font-family: 'slab_light';
+                        line-height: 2rem;
                     }
                 }
 
@@ -407,7 +421,6 @@ body {
                     p {
                         font-size: get-size($root,18);
                         font-family: 'slab_light';
-                        line-height: 1.5rem;
                     }
                 }
             }

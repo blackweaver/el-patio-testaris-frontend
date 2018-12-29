@@ -21,7 +21,7 @@
                     <img src="images/icon-magnifying.png" alt="">
                     <h4>Revision</h4>
                     <p>Ada vel ma quibuda de aped moluptas autatur autempo.</p> 
-                    <a href="javascript:;">> mehr erfahren</a> 
+                    <a href="revision.php">> mehr erfahren</a> 
                 </div>
                 <div class="box">
                     <img src="images/icon-calculator.png" alt="">

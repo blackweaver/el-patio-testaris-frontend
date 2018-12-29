@@ -42,15 +42,15 @@
                 ul {
                     width: auto;
                     float: none;
+                    text-align: right;
 
                     li {
                         padding: 0 6px;
                     }
                 
                     &.lang {
-                        position: absolute;
-                        right: 0;
-                        width: 20%;
+                        text-align: right;
+                        width: auto;
                     }
                 }
             }
@@ -121,7 +121,9 @@
 
             img:nth-child(1) {
                 width: 200px;
+                margin: 0 $mb-small !important;
             }
+
             *::-ms-backdrop, img:nth-child(1) { width: 50%; } /* IE11 */
 
             #ham {

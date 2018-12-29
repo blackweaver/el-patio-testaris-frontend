@@ -2,26 +2,19 @@ $(document).ready(function() {
 
 	/* Set vars */
 
-	let device_margin = 20;
-
-	if($(this).width() > 1024) {
-		device_margin = 20;
-	} else if($(this).width() > 720) {
-		device_margin = 10;
+	if($( this ).width() < 1280 ) {
+		document.querySelector("header").style.maxWidth = $("body").width() + "px";
+		document.querySelector("header").classList.add("fix-sticky-size");
 	} else {
-		device_margin = 5;
-	}
-
-	if($( this ).width() < 1280) {
-		document.querySelector("header").style.maxWidth = $(this).width() - device_margin * 6 + "px";
-	} else {
+		console.log("hola");
 		document.querySelector("header").style.maxWidth = "";
+		document.querySelector("header").classList.remove("fix-sticky-size");
 	}
 
 	/* Slider setup */
 
 	$(".slider").slick({
-		lazyLoad: 'ondemand', // ondemand progressive anticipated
+		lazyLoad: 'ondemand',
 		infinite: true
 	});
 
@@ -61,29 +54,22 @@ $(document).ready(function() {
 
 	function switchMenu(e){
 		if(!mobile){
-			// menu.classList.add("open");
-			// menu.classList.remove("close");
 			menu.className = "open";
 			mobile = true;
 		}else{
-			// menu.classList.add("close");
-			// menu.classList.remove("open");
 			menu.className = "close";
 			mobile = false;
 		}
-		/* if($("body").position().top > 0) {
-			menu.style.top = 0;	
-		}else{
-			menu.style.top = '80px';
-		} */
 		e.preventDefault();
 	}
 
 	$(window).resize(function() {
-		if( $( this ).width() > 720 && $( this ).width() < 1280 ) {
-			document.querySelector("header").style.maxWidth = $(this).width() - device_margin * 2 + "px";
+		if( $( this ).width() < 1280 ) {
+			document.querySelector("header").style.maxWidth = $("body").width() + "px";
+			document.querySelector("header").classList.add("fix-sticky-size");
 		} else {
 			document.querySelector("header").style.maxWidth = "";
+			document.querySelector("header").classList.remove("fix-sticky-size");
 		}
 	});
 
@@ -114,7 +100,7 @@ $(document).ready(function() {
 			let anchor = e.target.href.split('#');
 			anchor = "#" + anchor[1];
 			if(document.querySelector(anchor)) {
-				let total = $(anchor).offset().top - 50;
+				let total = $(anchor).offset().top - 100;
 				$('html,body').animate({ scrollTop: total }, 'swing');
 				console.log($(anchor).offset().top);
 			} else {
