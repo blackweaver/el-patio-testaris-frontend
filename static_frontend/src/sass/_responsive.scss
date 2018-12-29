@@ -64,7 +64,6 @@
         }
 
         section {
-
             padding: $mb-medium $m-medium/2 $m-medium*6 $m-medium/2;
             margin-bottom: $m-medium;
             margin-top: $m-medium;
@@ -75,7 +74,10 @@
                 
                 > div {
                     > div:nth-child(2) {
+                        margin-left: -$mb-medium / 2;
+                        margin-right: -$mb-medium / 2;
                         .box-team {
+                            padding: $mb-medium / 2;
                             min-height: 450px;
                         }
                     }
