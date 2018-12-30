@@ -104,6 +104,7 @@
         header { 
             text-align: left;
             width: 100%;
+            height: 80px;
             position: fixed;
             top: 0;
             z-index: 1001;
@@ -208,7 +209,7 @@
             &.text-box {
                 color: $color_main;
                 padding: $mb-small;
-                padding-top: $mb-small * 2;
+                padding-top: 80px;
                 padding-bottom: $mb-small * 2;
                 margin-bottom: $m-small;
     
