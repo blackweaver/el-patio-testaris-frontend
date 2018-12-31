@@ -1,7 +1,27 @@
+/* SMACSS methodology
+
++-layout/
+| +-grid.scss
+| +-alternate.scss
++-module/
+| +-callout.scss
+| +-bookmarks.scss
+| +-btn.scss
+| +-btn-compose.scss
++-base.scss
++-states.scss
++-site-settings.scss
++-mixins.scss
+
+*/
+
 @charset "UTF-8";
-@import "_reset";
-@import "_fonts";
-@import "_vars";
-@import "_mixins";
-@import "_desktop";
-@import "_responsive";
+@import "site-settings";
+@import "mixins";
+@import "reset";
+@import "states";
+@import "base";
+@import "layout/grid";
+@import "module/btn";
+@import "module/bookmarks";
+@import "module/callout";

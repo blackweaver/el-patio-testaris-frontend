@@ -1,0 +1,9 @@
+@keyframes menu-open {
+    0%   { left: -250px }
+    100% { left: 0px }
+}
+
+@keyframes menu-close {
+    0%   { left: 0px }
+    100% { left: -250px }
+}

@@ -1,18 +1,3 @@
-@keyframes openmenu {
-    0%   { left: -250px; }
-    100% { left: 0px; }
-}
-
-@keyframes closemenu {
-    0%   { left: 0px; }
-    100% { left: -250px; }
-}
-
-@mixin animation {
-    animation-duration: .5s;
-    animation-delay: 0s;
-}
-
 @function get-size($r,$px) {
     @return ($px / $r) * 1rem;
 }

@@ -1,3 +1,23 @@
+/* Colores */
+
+$color_main: #002856;
+$color_beige: #F0EEEB;
+
+/* Screens */
+$screen-small: 720px;
+$screen-medium: 1024px;
+$screen-wide: 1280px;
+
+/* Margin by screen */
+$m-small: 5px;
+$m-medium: 10px;
+$m-wide: 20px;
+
+/* Margin blocks */
+$mb-small: 10px;
+$mb-medium: 20px;
+$mb-wide: 40px;
+
 @font-face {
     font-family: 'slab_bold_itlaic';
     src: url('fonts/fonts/s-s-bold-italic-webfont.eot');

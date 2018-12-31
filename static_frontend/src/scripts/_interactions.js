@@ -12,6 +12,7 @@ $(document).ready(function() {
 	const btn_ham = document.querySelector("#ham");
 	const btn_top = document.querySelectorAll(".top");
 	const anchors = menu.querySelectorAll("a");
+	const topPos = $("body").offset().top;
 
 	/* Listeners */
 
@@ -22,36 +23,26 @@ $(document).ready(function() {
 	}
 
 	for(let i=0;i<anchors.length;i++) {
-		anchors[i].addEventListener('click', go);
+		anchors[i].addEventListener('click', goToAndStop);
 	}
 
 	/* Slider setup */
 
-	$(".slider").slick({
-		lazyLoad: 'ondemand',
-		infinite: true
-	});
+	$(".slider").slick();
 
 	/* Go to top */
 
 	function goToTop(e) {
 		let pos = 0;
 		try {
-			if($( this ).width() <= minWidth) {
-				pos = $("body").offset().top - marginAnchors;
-			} else {
-				pos = $("body").offset().top;
-			}
-			$('html,body').animate({ scrollTop: pos }, 'swing');
+			($(this).width() <= minWidth)? pos = topPos - marginAnchors : pos = topPos;
+			$('html, body').animate({ scrollTop: pos }, 'swing');
 		}
-		catch(err) {
-			// console.log(err);
-		}
+		catch(err) {}
 		e.preventDefault();
 	}
 
 	/* Mobile menú */
-
 
 	function switchMenu(e){
 		if(!mobile){
@@ -64,17 +55,15 @@ $(document).ready(function() {
 		e.preventDefault();
 	}
 
+	/* Set right sticky width */
+
+	wideSticky();
 	$(window).resize(function() {
 		wideSticky();
 	});
 
-	wideSticky();
 	function wideSticky() {
-		if( $( this ).width() < maxWidth ) {
-			document.querySelector("header").style.maxWidth = $("body").width() + "px";
-		} else {
-			document.querySelector("header").style.maxWidth = "";
-		}
+		($(document).width() < maxWidth)? header.style.maxWidth = $("body").width() + "px" : header.style.maxWidth = "";
 	}
 
 	$(document).scroll(function() {
@@ -82,26 +71,22 @@ $(document).ready(function() {
 			menu.className = "close";
 			mobile = false;
 		}
-		if($(window).scrollTop() > 0) {
-			if($( this ).width() > minWidth) {
-				header.classList.add("sticky");
-			}
+		if($(this).scrollTop() > 0) {
+			if($(this).width() > minWidth) header.classList.add("sticky");
 		} else {
-			header.classList.remove("sticky");
+			header.classList.remove("sticky")
 		}
 	});
 
-	/* Go anchors */
+	/* Go to differents anchors */
 
-	function go(e) {
-		console.log("hola");
+	function goToAndStop(e) {
 		try {
 			let anchor = e.target.href.split('#');
 			anchor = "#" + anchor[1];
 			if(document.querySelector(anchor)) {
 				let total = $(anchor).offset().top - marginAnchors;
-				$('html,body').animate({ scrollTop: total }, 'swing');
-				console.log($(anchor).offset().top);
+				$('html, body').animate({ scrollTop: total }, 'swing');
 			} else {
 				window.open("index.php" + anchor, "_self");
 			}

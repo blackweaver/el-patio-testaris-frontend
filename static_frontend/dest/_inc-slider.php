@@ -1,4 +1,4 @@
-<section>
+<section id="slider">
     <div class="slider" data-sizes="50vw" style="width: 100% !important">
         <div>
             <h3><a href="revision.php">Revision</a> ・ Sreuern ・ Treuhand</h3>

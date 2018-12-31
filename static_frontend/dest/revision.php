@@ -1,9 +1,9 @@
 <?php include('_inc-head.php') ?>
 <body>
     <?php include('_inc-header.php') ?>
-    <section class="text-box">
-            <div><p>Revision</p></div>
-            <div class="pages-block revision">
+    <section class="page">
+            <h2>Revision</h2>
+            <div class="content pages-block revision">
                 <p>Tusdant vel ma quibusaped moluptas autatur autempora. Tusdant vel ma quibusaped moluptas autatur autempora consendaera nam rerempos quam aut lit occumque estrumquam dolutem si am reheniet dolest que conseque.
                 </p>
                 <ul>
@@ -17,7 +17,6 @@
                     <li>Tusdant vel ma quibusapeduptas autatur </li>
                 </ul>
             </div>
-            <div></div>
             <div class="fix-float"></div>
     </section>
     <?php include('_inc-footer.php') ?>

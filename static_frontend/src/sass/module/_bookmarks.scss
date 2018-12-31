@@ -1,0 +1,18 @@
+.top {
+    color: $color_main;
+    position: absolute;
+    bottom: $mb-wide;
+    right: $mb-wide;
+}
+
+@media (max-width: $screen-small) {
+    .top {
+        width: 100%;
+        display: block;
+        position: relative;
+        margin-top: $mb-small;
+        text-align: center;
+        right: 0;
+        bottom: 0;
+    }
+}

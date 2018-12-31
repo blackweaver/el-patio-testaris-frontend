@@ -1,9 +1,9 @@
 <?php include('_inc-head.php') ?>
 <body>
     <?php include('_inc-header.php') ?>
-    <section class="text-box" id="uber-uns">
-            <div><p>Impressum</p></div>
-            <div class="pages-block">
+    <section class="page" id="uber-uns">
+            <h2>Impressum</h2>
+            <div class="content pages-block">
                 <p>Testaris AG <br>
                 Malzgasse 18<br>
                 CH-4052 Basel
@@ -25,7 +25,6 @@
                 <a href="mailto:info@testaris.ch">info@testaris.ch</a>
                 </p>
             </div>
-            <div></div>
             <div class="fix-float"></div>
     </section>
     <?php include('_inc-footer.php') ?>
