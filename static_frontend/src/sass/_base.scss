@@ -11,7 +11,6 @@ html {
 
 body {
     font-family: 'slab_regular', Arial, Helvetica, sans-serif;
-    line-height: 1.3em;
     color: white;
     background: white;
     max-width: $screen-wide;
@@ -171,7 +170,6 @@ body {
                 p {
                     width: 60%;
                     font-size: get-size($root, 52);
-                    line-height: 1.3em;
                     margin: 0 auto;
                     text-align: center;
                 }
@@ -227,7 +225,6 @@ body {
             width: 60%;
             margin-left: 20%;
             font-size: get-size($root, 27);
-            line-height: 2rem;
 
             &.text-uber {
                 font-family: 'slab_light';
@@ -237,7 +234,6 @@ body {
                 width: 30%;
                 float: left;
                 font-size: get-size($root, 18);
-                line-height: 1.4rem;
 
                 a {
                     color: $color_main;
@@ -257,7 +253,6 @@ body {
                 p {
                     float: left;
                     margin-right: 15px;
-                    line-height: 1.4rem;
                 }
 
                 iframe {
@@ -272,7 +267,6 @@ body {
             p {
                 margin-bottom: 20px;
                 font-size: get-size($root, 18);
-                line-height: 1.5rem;
             }
 
             a {
@@ -299,7 +293,6 @@ body {
             ul {
                 font-size: get-size($root, 27);
                 font-family: 'slab_light';
-                line-height: 2rem;
             }
         }
 
@@ -321,7 +314,6 @@ body {
         address {
             float: left;
             font-size: get-size($root, 24);
-            line-height: 1.8rem;
 
             p {
                 padding-bottom: $mb-wide;
@@ -485,7 +477,6 @@ body {
                     text-align: left;
                     width: 100%;
                     height: auto;
-                    line-height: normal;
                     margin-top: 0;
 
                     li {
