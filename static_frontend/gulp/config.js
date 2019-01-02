@@ -19,7 +19,7 @@ module.exports = {
     }
   },
   sass: {
-    src: src + '/sass/*.{sass,scss}',
+    src: src + '/sass/**/*.{sass,scss}',
     dest: dest,
     settings: {
       indentedSyntax: false,
